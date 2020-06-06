@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>slideUp and slideDown</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="my.js"></script>
+	<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$(".slider").cycle({
+    	fx:"scrollRight",
+    	next:".next",
+    	prev:".prev",
+     
+    });
+	$("#a12").click(function(){	
+    $(".z").fadeIn(1000);
+});
+    	$(".aa1").click(function(){	
+    $(".z").fadeOut(1000);
+    });
+     $(".abc1").delay(100).fadeIn(1000);
+      $(".abc2").delay(500).fadeIn(1000);
+       $(".abc3").delay(1000).fadeIn(1000);
+        $(".abc4").delay(1500).fadeIn(1000);
+         $(".abc5").delay(2000).fadeIn(1000);
+          $(".abc6").delay(2500).fadeIn(1000);
+           $(".abc7").delay(3000).fadeIn(1000);
+            $(".abc8").delay(3500).fadeIn(1000);
+             $(".abc9").delay(4000).fadeIn(1000);
+              $(".abc10").delay(4500).fadeIn(1000);
+               $(".abc11").delay(5000).fadeIn(1000);
+                $(".abc12").delay(5500).fadeIn(1000);
+                 $(".abc13").delay(6000).fadeIn(1000);
+                  $(".abc14").delay(6500).fadeIn(1000);
+                   $(".abc15").delay(7000).fadeIn(1000);
+                    $(".abc16").delay(7500).fadeIn(1000);
+	                   
+  });	
+	</script>
+	<style type="text/css">
+	
+    *{
+			padding: 0px;
+			margin: 0px;
+			 font-family: "montserrat",sans-serif;
+			
+		}
+    body
+    {
+      background-color: black;
+
+    }
+	header{
+          background-color: hsla(150, 2%, 16%, 1);
+         width:100%;
+         height: 100px;
+         color: white;
+         
+		}
+		ul
+		{
+        display: flex;
+        float: right;
+        justify-content: flex-end;
+        padding-top: 15px; 
+		}
+		ul li
+		{
+			padding: 20px;
+			list-style: none; 
+		}
+        .z{
+        	background-color:#222f3e;
+        	height:400px;
+      width: 320px;
+      color:white;
+      position: fixed;
+      top:0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      margin: auto;
+      font-family: sans-serif;
+      text-align: center;
+      border-radius: 20px;
+      box-shadow: 0px 4px 8px #5f27cd;
+      z-index: 9999;
+      display: none;
+      }
+     
+      #z1,#z121
+      {
+      border:none;
+      border-bottom: 2px solid white;
+      background:transparent;
+      text-align: center;
+      padding: 12px;
+      width:100px;
+      transition:width 1s;
+      }
+      #z1:hover,#z121:hover
+      {
+      cursor:pointer;
+      width:200px;
+      }
+      button
+      {
+   	  padding: 10px 40px;
+   	  background:white;
+   	  color:black;
+   	  font-family: sans-serif;
+   	  font-weight: bold;
+      position: relative;
+      border: 4px solid #341f97;
+      cursor: pointer;
+      border-radius: 20px;
+      }
+     
+      button::before
+      {
+   	  left: 12px;
+   	  content: "";
+   	  width:18px;
+   	  height: 4px;
+   	  background-color: black;
+   	  position: absolute;
+   	  top:-4px;
+   	  transition: .4s linear;
+      }
+     
+      button::after
+      {
+   	  right: 12px;
+   	  content: "";
+   	  width:18px;
+   	  height: 4px;
+   	  background-color: black;
+   	  position: absolute;
+   	  bottom: -4px;
+   	  transition: .4s linear; 
+      } 
+      button:hover
+      {
+      	background-image: linear-gradient(#5f27cd,#5f27cd,rgba(0,0,255,0.8));
+   	  box-shadow: 0px 0px 48px #5f27cd;
+      }
+      button:hover::before
+      {
+      left: 84px;
+      }
+      button:hover::after
+      {
+   	  right: 84px;
+      }
+     
+      .aa1
+      {
+   	  padding: 10px 40px;
+   	  background:white;
+      color: black;
+   	  font-family: sans-serif;
+   	  font-weight: bold;
+      position: relative;
+      left:100px;
+      top:25px;
+      border: 4px solid #341f97;
+      cursor: pointer;
+      border-radius: 20px;
+      }
+     
+      .aa1::before
+      {
+   	  left: 12px;
+   	  content: "";
+   	  width:18px;
+   	  height: 4px;
+   	  background-color: black;
+   	  position: absolute;
+   	  top:-4px;
+   	  transition: .4s linear;
+      }
+     
+      .aa1::after
+      {
+   	  right: 12px;
+   	  content: "";
+   	  width:18px;
+   	  height: 4px;
+   	  background-color: black;
+   	  position: absolute;
+   	  bottom: -4px;
+      transition: .4s linear;
+      } 
+   
+      .aa1:hover
+      {
+   	  background-image: linear-gradient(#5f27cd,#5f27cd,rgba(0,0,255,0.8));
+   	  box-shadow: 0px 0px 48px #5f27cd;
+      }
+
+      .aa1:hover::before
+      {
+      left: 78px;
+      }
+      .aa1:hover::after
+      {
+      right: 78px;
+      }
+        
+      #a12{
+      cursor: pointer;
+      }
+      h1{
+      	height: 80px;
+      }
+      .main
+      {
+      height: 400px;
+      width: 100%;    
+      position: relative;
+      }
+      .next
+      {
+      position:absolute;
+      right:0px;
+      bottom:200px;
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      line-height: 100px;
+      font-size: 20px;
+      width: 70px;
+      height:100px;
+      text-align: center;
+      border-radius: 50%;
+      z-index: 9999;
+      cursor: pointer;
+      }
+      .next:hover
+      {
+      background-color: rgba(0,0,0,1);
+      }
+      .prev
+      {
+      background-color: rgba(0,0,0,0.5); 	
+      position:absolute;
+      bottom:200px;
+      color: white;
+      line-height: 100px;
+      font-size: 20px;
+      width: 70px;
+      height:100px;
+      text-align: center;
+      border-radius: 50%;
+      z-index: 9999;
+      cursor:pointer;
+      }
+ .prev:hover
+      {
+      background-color: rgba(0,0,0,1);
+      }
+      .slider
+      {
+      	 height: 100%;
+      width: 100%;
+      overflow: hidden;    
+      }
+      img 
+      {
+      	width: 100%;
+        height: 100%;
+        background-size:cover;
+        background-position: center;
+      }
+      .abc
+      {
+        margin-top: 10px;
+        height:100px;
+        color: white;
+        text-align: center;
+      }
+      
+      span{
+        
+        margin-left: 10px;
+        font-size: 80px;
+
+        
+      }
+      .abc1{
+        position: absolute;
+        left:200px;
+        display: none;
+      }
+      .abc2{
+        position: absolute;
+        left:260px;
+      display: none;
+      }
+      .abc3{
+        position: absolute;
+        left:340px;
+      display: none;
+    }
+     .abc4{
+      position: absolute;
+        left:400px;
+      display: none;    
+      }
+      .abc5{
+        position: absolute;
+        left:460px;
+      display: none;
+      }
+      .abc6{
+        position: absolute;
+        left:520px;
+        display: none;
+      }
+      .abc7{
+        position: absolute;
+        left:580px;
+        display: none;
+      }
+      .abc8{
+        position: absolute;
+        left:640px;
+        display: none;
+      }
+      .abc9{
+        position: absolute;
+        left:700px;
+        display: none;
+      }
+      .abc10{
+        position: absolute;
+        left:755px;
+        display: none;
+      }
+      .abc11{
+        position: absolute;
+        left:810px;
+        display: none;
+      }
+      .abc12{
+        position: absolute;
+        left:870px;
+        display: none;
+      }
+      .abc13{
+
+        position: absolute;
+        left:930px;
+        display: none;
+      }
+      .abc14{
+    position: absolute;    
+    left:970px;
+    display: none;
+      }
+      .abc15{
+        position: absolute;
+        left:1000px;
+        display: none;
+      }
+      .abc16{
+        position: absolute;
+        left:1050px;
+        display: none;
+      }
+	  </style>
+      </head>
+      <body>
+
+      <header>
+	  <ul>
+		<li>Home</li>
+		<li>Contact us</li>
+		<li>About Us</li>
+		<li>Courses</li>
+		<li id="a12">LogIn/SignUp</li>
+	</ul>
+    </header>
+    <section>
+    <div class="main">
+	<div class="next"> >>> </div>
+	<div class="prev"> <<< </div>
+	<div class="slider">
+	<img src="1.jpg"/>
+	<img src="2.jpg"/>
+	<img src="3.jpg"/>
+	<img src="4.jpg"/>
+	</div>
+
+
+    </div>
+    <div class="z">
+	<h1>LOGIN</h1>
+    <form action="#">
+	<label for="z1">UserName:</label></br></br>
+	<input type="text" id="z1" placeholder="UserName" /></br></br>
+	<label for="z121">Password:</label></br></br>
+	<input type="password" id="z121" placeholder="Password" /></br></br>
+	<button type="submit">LogIn</button></br></br>
+    <button class="aa1">Skip</button></br></br>
+	</form>
+    </div>
+    <div class="abc">
+      <span class="abc1">T</span> 
+      <span class="abc2">W</span>
+      <span class="abc3">O</span>
+      <span class="abc4">P</span>
+      <span class="abc5">P</span>
+      <span class="abc6">A</span>
+      <span class="abc7">P</span>
+      <span class="abc8">E</span>
+      <span class="abc9">R</span>
+      <span class="abc10">S</span>
+      <span class="abc11">O</span>
+      <span class="abc12">N</span>
+      <span class="abc13">L</span>
+      <span class="abc14">I</span>
+      <span class="abc15">N</span>
+      <span class="abc16">E</span>
+    </div>
+
+  </section>
+    </body>
+    </html>
+	</div>
+    </body>
+    </html>
